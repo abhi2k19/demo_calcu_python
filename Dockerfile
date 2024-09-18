@@ -24,5 +24,3 @@ COPY --from=build /app /app
 
 # Set the default command to run when the container starts
 CMD ["python", "app.py"]
-
-
