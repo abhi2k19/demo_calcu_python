@@ -1,7 +1,7 @@
 from calculator import operations
 
 def main():
-    print("Welcome to the Calculator App!")
+    print("Welcome to My Demo Calculator App!")
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     
