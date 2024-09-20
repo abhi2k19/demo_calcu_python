@@ -1,0 +1,14 @@
+# Python-specific
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+
+# Docker-specific
+.dockerignore
+
+# Logs
+*.log
+
+# Environment variables
+.env
