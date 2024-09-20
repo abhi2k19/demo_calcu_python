@@ -11,6 +11,12 @@ MY_CALCU_PYTHON │ ├── app.py # Main Python file to run the calculator
  └── test_operations.py # Unit tests for calculator functions 
 |── Dockerfile # Docker instructions
 
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abhi2k19/demo_calcu_python.git
+
 ## Features
 - Addition, subtraction, multiplication, and division operations.
 - Error handling for division by zero.
