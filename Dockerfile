@@ -22,5 +22,8 @@ FROM python:3.9-slim
 WORKDIR /app
 COPY --from=build /app /app
 
+# Expose the port the application will run on
+EXPOSE 5000
+
 # Set the default command to run when the container starts
 CMD ["python", "app.py"]
