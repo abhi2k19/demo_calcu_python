@@ -1,8 +1,8 @@
 # Python Calculator Application
 
 ## Overview
-This is a simple command-line calculator application built in Python that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
-
+This is a simple command-line calculator application built in Python that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Using "AWS CodeBuild" we are creating "Continuous Integration".
+ 
 ## Folder Structure
 MY_CALCU_PYTHON │ ├── app.py # Main Python file to run the calculator 
 ├── calculator/ # Calculator logic module │ 
