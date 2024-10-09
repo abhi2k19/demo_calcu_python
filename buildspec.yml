@@ -32,13 +32,6 @@ phases:
       - echo "Pushing Docker image to registry..."
       - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/demo_calcu_python:latest"  # Push the image to dockerhub registry
 
-  post_build:
-    commands:
-      - echo "Pulling the Docker image..."
-      - docker pull "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/demo_calcu_python:latest"  # Pull the latest image from dockerhub
-      - echo "Running the Docker container..."
-      - docker run -d -p 8000:8000 "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/demo_calcu_python:latest"  # Run the image as a Container
-      - echo "Docker container is running."
 
 artifacts:
   files:
