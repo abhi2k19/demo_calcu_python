@@ -26,4 +26,4 @@ COPY --from=build /app /app
 EXPOSE 8000
 
 # Set the default command to run when the container starts
-CMD ["python", "app.py"]
+ENTRYPOINT ["python", "app.py"]

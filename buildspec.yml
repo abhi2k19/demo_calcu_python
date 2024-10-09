@@ -22,13 +22,12 @@ phases:
 
   build:
     commands:
+      - set -e   # Stop on any error
       - echo "Logging into Docker registry..."
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login --username "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL" # Login to Docker registry
       - echo "Building the Docker image..."
-      - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/demo_calcu_python:latest" . # Build the Docker image using Dockerfile
+      - docker build --no-cache -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/demo_calcu_python:latest" . # Build the Docker image using Dockerfile
       - echo "Docker image build complete."
-      - echo "Logging into Docker registry..."
-      - echo "$DOCKER_REGISTRY_PASSWORD" | docker login --username "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL" 
       - echo "Pushing Docker image to registry..."
       - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/demo_calcu_python:latest"  # Push the image to dockerhub registry
 
