@@ -23,7 +23,7 @@ WORKDIR /app
 COPY --from=build /app /app
 
 # Expose the port the application will run on
-EXPOSE 5000
+EXPOSE 8000
 
 # Set the default command to run when the container starts
 CMD ["python", "app.py"]
