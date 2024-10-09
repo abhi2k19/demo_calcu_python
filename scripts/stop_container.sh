@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
 
-echo "HI WE are Stoping........"
+containerId = docker ps | awk -F " " '{print $1}'
+docker rm -f $containerId
