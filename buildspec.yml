@@ -20,7 +20,7 @@ phases:
       - docker --version # Check Docker version to ensure Docker is installed
       - echo "Docker is installed."
 
-   post_build:
+  post_build:
     commands:
       - echo "Cleaning up unused Docker images..."
       - docker system prune -f  # Clean up unused Docker images
