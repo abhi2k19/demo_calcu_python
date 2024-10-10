@@ -1,7 +1,12 @@
-version: 0.0 
+version: 0.0
 os: linux
 files:
   - source: /app.py
+  - source: /calculator/operations.py
+  - source: /Dockerfile
+  - source: /requirements.txt
+  - source: /scripts/stop_container.sh
+  - source: /scripts/start_container.sh
 
 hooks:
   ApplicationStop:
