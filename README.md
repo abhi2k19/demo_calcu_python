@@ -3,15 +3,10 @@
 ## Overview
 This is a simple command-line calculator application built in Python that performs basic arithmetic operations.
  Using "AWS CodeBuild", "AWS CodePipeline", and "AWS CodeDeploy" we are performing "Continuous Integration" and "Continuous Delivery".
-  
-## Folder Structure
-MY_CALCU_PYTHON │ ├── app.py # Main Python file to run the calculator 
-├── calculator/ # Calculator logic module │ 
-└── operations.py # Functions for calculator operations
-├── tests/ # Directory for test cases │ 
- └── test_operations.py # Unit tests for calculator functions 
-|── Dockerfile # Docker instructions
-
+## Working...
+> Here i have provided Both jenkins file(if you want to go with it) and buildspec.yml file (AWS CodeBuild), appspec.yml file (AWS CodeDeploy).
+> For Code Deploy stage to complete we have added "start_container.sh" and "stop_container.sh"--
+> we included a "Multistage Docker File".
 
 ## Installation
 1. Clone the repository:
