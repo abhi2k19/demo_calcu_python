@@ -9,6 +9,10 @@ files:
   - source: /scripts/start_container.sh
 
 hooks:
+  BeforeInstall:
+    - location: scripts/set_permissions.sh
+      timeout: 300
+      runas: root
   ApplicationStop:
     - location: scripts/stop_container.sh
       timeout: 300
