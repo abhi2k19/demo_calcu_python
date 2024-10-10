@@ -40,7 +40,6 @@ phases:
 artifacts:
   files:
     - "**/*"
-    - "!tests/*" # Exclude tests folder if not needed
     - "!README.md" # Exclude README from deployment if not required
     - "!requirements.txt" # Exclude requirements.txt if not needed
     - "!Dockerfile" # Exclude Dockerfile if not required
