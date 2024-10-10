@@ -1,9 +1,9 @@
 version: 0.2
 env:
   parameter-store:
-    DOCKER_REGISTRY_USERNAME: /calcu_python/docker-credentials/Username
-    DOCKER_REGISTRY_PASSWORD: /calcu_python/docker-credentials/Password
-    DOCKER_REGISTRY_URL: /calcu_python/docker-registry/Url
+    DOCKER_REGISTRY_USERNAME: /myapp/credentials/docker/Username
+    DOCKER_REGISTRY_PASSWORD: /myapp/credentials/docker/Password
+    DOCKER_REGISTRY_URL: /myapp/credentials/docker/Url
 
 phases:
   install:
